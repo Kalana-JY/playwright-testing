@@ -33,7 +33,7 @@ test('verify inventory page loads and items can be added', async ({ page }) => {
   
   // Assert the header is visible and correct
   const title = page.locator('.title');
-  await expect(title).toHaveText('Items'); //Products
+  await expect(title).toHaveText('Products'); //Products , Items
   
   // Interact and assert state change
   await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
